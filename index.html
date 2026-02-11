@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 💙✨</title>
+     <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<audio id="bg-music" src="media/bg-music.mp3" autoplay loop></audio>
+<audio id="click-sound" src="media/click.wav"></audio>
+
+<div id="main-container">
+
+    <!-- FIRST PAGE -->
+    <div class="page" id="page1">
+        <h1>Hi Hannah! It's Kate and It's Fabruary 11th! Are you ready for your birthday gift? 💙✨</h1>
+ <img src="media/gif.gif" alt="Birthday GIF" style="width: 200px; margin-bottom: 20px;">
+        <div class="buttons">
+            <button id="yes-btn">Yes, please 🐬</button>
+            <button id="no-btn">No, thank you 😳</button>
+        </div>
+    </div>
+
+    <!-- GIFTS PAGE -->
+    <div class="page" id="page2">
+        <h1>Here are the gifts! 🎁</h1>
+        <div class="gift-buttons">
+            <button class="gift-btn" data-target="flower"><img src="icons/icon2.png" alt="Gift 2">Virtual Flower</button>
+            <button class="gift-btn" data-target="song"><img src="icons/icon3.png" alt="Gift 3">Song I Associate You With</button>
+            <button class="gift-btn" data-target="letter"><img src="icons/icon4.png" alt="Gift 4">Birthday Letter</button>
+        </div>
+        <button class="back-btn">← Back</button>
+    </div>
+
+   
+    <!-- FLOWER PAGE -->
+    <div class="page" id="flower">
+        <img src="media/flower.png" alt="Virtual Flower">
+        <p>You are my Daisy🌸🎀</p>
+        <div class="frames">
+            <p>Think gentle souls, kind, a little idealistic, warm without trying. </p>
+            <p>Daisies symbolize simplicity and truth, so they’re tied to people who don’t play mind games.</p>
+        </div>
+        <button class="back-btn">← Back</button>
+    </div>
+
+    <!-- SONG PAGE -->
+    <div class="page" id="song">
+        <video src="media/songvideo.mp4" loop controls></video>
+        <p>The song I associate with you!🎵</p>
+        <p>Please stop it before you go to another page</p>
+        <button class="back-btn">← Back</button>
+    </div>
+
+
+    <!-- LETTER PAGE -->
+    <div class="page" id="letter">
+        <h2>Birthday Letter for precious Hannah🌊</h2>
+        <p font "courier">Happy Birthday, Hannah! 🎉
+Twenty one now old lady. We've only had a handful of days
+but if you tally the quiet years i spent searching
+the slow ache of every almost and not quite
+then it all adds up differently
+suddenly the timeline makes perfect, aching sense
+that’s why you feel so essential.
+i’m grateful down to my bones
+that you landed here, in my orbit
+and today i get to make things with my hands
+small offerings
+for the girl who makes ordinary hours feel like love letters
+happy birthday, beautiful
+may this year hold you the way i wish i could
+gently, completely, forever</p>
+        <button class="back-btn">← Back</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
