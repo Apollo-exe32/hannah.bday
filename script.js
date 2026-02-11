@@ -5,7 +5,7 @@ const noBtn = document.getElementById('no-btn');
 const giftButtons = document.querySelectorAll('.gift-btn');
 const backButtons = document.querySelectorAll('.back-btn');
 const clickSound = document.getElementById('click-sound');
-const bgMusic = document.getElementById('bg-music.mp3');
+const bgMusic = document.getElementById('bg-music');
 
 // FUNCTIONS
 function showPage(id) {
@@ -28,8 +28,8 @@ noBtn.addEventListener('mouseenter', () => {
 // YES BUTTON
 yesBtn.addEventListener('click', () => {
     clickSound.play();
-    bgMusic.volume = 0.2; // Makes it quiet (20% volume)
-    bgMusic.play();
+    bg-Music.volume = 0.2; // Makes it quiet (20% volume)
+    bg-Music.play();
     showPage('page2');
 });
 // GIFT BUTTONS
@@ -65,3 +65,4 @@ function createFloatingEmoji() {
 
 
 setInterval(createFloatingEmoji, 500);
+
