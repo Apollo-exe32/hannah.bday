@@ -5,7 +5,7 @@ const noBtn = document.getElementById('no-btn');
 const giftButtons = document.querySelectorAll('.gift-btn');
 const backButtons = document.querySelectorAll('.back-btn');
 const clickSound = document.getElementById('click-sound');
-const bgMusic = document.getElementById('bg-music');
+const bgMusic = document.getElementById('bg-music.mp3');
 
 // FUNCTIONS
 function showPage(id) {
@@ -62,5 +62,6 @@ function createFloatingEmoji() {
         emoji.remove();
     }, 10000);
 }
+
 
 setInterval(createFloatingEmoji, 500);
