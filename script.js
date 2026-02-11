@@ -26,10 +26,11 @@ noBtn.addEventListener('mouseenter', () => {
 });
 
 // YES BUTTON
+// YES BUTTON
 yesBtn.addEventListener('click', () => {
     clickSound.play();
-    bgMusic.volume = 0.2; // Makes it quiet (20% volume)
-    bgMusic.play();
+    bgMusic.volume = 0.2; // ✅ CORRECT - matches the variable name
+    bgMusic.play();       // ✅ CORRECT
     showPage('page2');
 });
 // GIFT BUTTONS
@@ -65,5 +66,6 @@ function createFloatingEmoji() {
 
 
 setInterval(createFloatingEmoji, 500);
+
 
 
