@@ -28,9 +28,18 @@ noBtn.addEventListener('mouseenter', () => {
 // YES BUTTON
 // YES BUTTON
 yesBtn.addEventListener('click', () => {
+    console.log('Yes button clicked!');
+    console.log('bgMusic element:', bgMusic);
+    
     clickSound.play();
-    bgMusic.volume = 0.2; // ✅ CORRECT - matches the variable name
-    bgMusic.play();       // ✅ CORRECT
+    
+    if (bgMusic) {
+        bgMusic.volume = 0.2;
+        bgMusic.play().catch(err => console.error('Music play error:', err));
+    } else {
+        console.error('bgMusic element not found!');
+    }
+    
     showPage('page2');
 });
 // GIFT BUTTONS
@@ -66,6 +75,7 @@ function createFloatingEmoji() {
 
 
 setInterval(createFloatingEmoji, 500);
+
 
 
 
